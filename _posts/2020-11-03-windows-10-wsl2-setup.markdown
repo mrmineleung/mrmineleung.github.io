@@ -32,8 +32,8 @@ root = /
 ***
 ## Install SapMachine JDK & Maven 
 
-[SapMachine JDK]
-[Maven]
+[SapMachine JDK][SapMachine-JDK-Link]
+[Maven][Maven-Link]
 
 
 ```
@@ -66,6 +66,7 @@ PermitRootLogin yes -> 是否開放 root 登入
 
 ### Restart service after saved
 `sudo /etc/init.d/ssh restart`
+
 ***
 ## Install Nodejs 10.x
 
@@ -108,5 +109,5 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/do
 ```
 
 
-[SapMachine JDK]: https://sap.github.io/SapMachine/
-[Maven]: https://maven.apache.org/download.cgi
+[SapMachine-JDK-Link]: https://sap.github.io/SapMachine/
+[Maven-Link]: https://maven.apache.org/download.cgi
