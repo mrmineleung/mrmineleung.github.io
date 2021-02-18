@@ -2,8 +2,42 @@
 layout: post
 title:  "Java Spring Web Client"
 date:   2021-01-28 00:00:00 +0800
-categories: Java, Spring, Web Client
+categories: Java
+tags: 
+  - "Java"
+  - "Spring"
+  - "Web Client"
 ---
+
+Libraries needed
+
+{% highlight xml %}
+<dependency>
+			<groupId>io.projectreactor.netty</groupId>
+			<artifactId>reactor-netty</artifactId>
+			<version>0.8.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webflux</artifactId>
+			<version>5.2.10.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor.addons</groupId>
+			<artifactId>reactor-extra</artifactId>
+			<version>3.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.53.Final</version>
+		</dependency>
+{% endhighlight %}
 
 WebClientWebServiceClientFactory.java
 {% highlight java %}
@@ -47,7 +81,7 @@ ApiService.java
                                         Boolean.TRUE.equals(httpStatus.is5xxServerError()),
                         clientResponse -> {
                             LOG.error("Error Response data : {}", clientResponse.bodyToMono(String.class).block());
-                            return Mono.error(new AsiaEWalletWebServiceException("Failed to call API."));
+                            return Mono.error(new Exception("Failed to call API."));
                         })
                 .bodyToMono(Object.class)
                 .doOnError(e -> LOG.error("Unexpected error occurs. ", e))

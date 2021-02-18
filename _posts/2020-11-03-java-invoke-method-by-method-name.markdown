@@ -3,6 +3,9 @@ layout: post
 title:  "Invoke a Java method by given method name"
 date:   2020-11-03 11:51:37 +0800
 categories: Java
+tags: 
+  - "Java"
+  - "Invoke Method"
 ---
 
 For those who want a straight-forward code example in Java 7:

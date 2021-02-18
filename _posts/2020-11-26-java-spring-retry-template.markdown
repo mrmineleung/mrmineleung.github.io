@@ -2,7 +2,11 @@
 layout: post
 title:  "Java Spring Retry Template"
 date:   2020-11-03 11:51:37 +0800
-categories: Java, Spring, Retry Template
+categories: Java
+tags: 
+  - "Java"
+  - "Spring"
+  - "Spring Retry"
 ---
 
 demo-spring.xml

@@ -3,6 +3,10 @@ layout: post
 title:  "EhCache 3 XML Configuration"
 date:   2020-11-03 11:51:37 +0800
 categories: EhCache
+tags: 
+  - "Java"
+  - "Spring"
+  - "EhCache"
 ---
 
 demo-spring-cache.xml

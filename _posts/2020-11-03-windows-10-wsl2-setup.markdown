@@ -3,6 +3,9 @@ layout: post
 title:  "Windows 10 WSL2 Setup"
 date:   2020-11-03 11:51:37 +0800
 categories: WSL2
+tags: 
+  - "WSL2"
+  - "Windows 10"
 ---
 
 ## WSL2 Config
